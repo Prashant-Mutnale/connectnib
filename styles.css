@@ -1,0 +1,262 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	text-decoration: none !important;
+}
+@font-face {
+    font-family: 'CircularStd';
+    src: url('/static/CircularStd-Book.woff2') format('woff2'),
+        url('/static/CircularStd-Book.woff') format('woff');
+    /* font-weight: 500; */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Std Medium';
+    src: url('/static/CircularStd-Medium.woff2') format('woff2'),
+        url('/static/CircularStd-Medium.woff') format('woff');
+    /* font-weight: 500; */
+    font-style: normal;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'CircularStd';
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.main{
+	background: #fff;
+	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05) !important;
+	animation: smoothScroll 0.5s;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+/* static css */
+.btnsuccess{
+	border-color: #0265ff;
+	background-color: #0265ff;
+    /* background: linear-gradient(to right, #8a63f2 0%,#6a38da 100%); */
+    font-size: 14px;
+    padding: 11px 26px;
+}
+.btnsuccess:hover{
+	/* background-color: #7F00FF;
+	border-color: #7F00FF; */
+	background-color: #0265ff;
+	/* box-shadow: 0 20px 50px 0 rgba(0, 83, 213, 0.5); */
+}
+
+/* static css */
+
+
+header a{
+	color: #6a7a8e;
+	font-size: 20px;
+	text-decoration: none;
+	font-family: CircularStd;
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+	letter-spacing: normal;
+	margin-left: 15px;
+}
+.userHolder{
+	text-align: center;
+}
+.userHolder h3{
+	text-align: center;
+}
+.logo{
+	width: 173px;
+}
+.btnholder{
+	margin-left: 20px;
+}
+
+.banner{
+	background-image: url('/static/images/banner.png');
+    height: 300px;
+    background-size: cover;
+}
+.categoriesbanner{
+	background-image: url('/static/images/categories-banner.png');
+    height: 300px;
+    background-size: cover;
+}
+.banner h1, .categoriesbanner h1{
+	font-size: 28px;
+	line-height: 40px;
+	text-align: center;
+	padding-top: 100px;
+}
+.aboutus h2{
+	font-size: 35px;
+    font-family: Circular Std Medium;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: center;
+    color: #323c47;
+    margin-bottom: 30px;
+    margin-top: 0;
+	font-weight: normal;
+	padding-top: 80px;
+}
+.aboutus p{
+	font-size: 18px;
+    color: #848a91;
+	line-height: 30px;
+	text-align: center;
+}
+
+.homeCategories{
+	padding-top: 80px;
+}
+.homeCategories h2{
+	text-align: center;
+	font-size: 35px;
+    font-family: Circular Std Medium;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: center;
+    color: #323c47;
+    margin-bottom: 30px;
+    margin-top: 0;
+    font-weight: normal;
+}
+.homeCategories p{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.homeCategoriesCards{
+	-webkit-box-shadow: 0px 16px 35px 6px rgba(245, 245, 245, 0.74);
+    -moz-box-shadow: 0px 16px 35px 6px rgba(245, 245, 245, 0.74);
+	box-shadow: 0px 16px 35px 6px rgba(245, 245, 245,0.74);
+	padding: 20px;
+	margin: 10px;
+}
+
+.homeCategories ul{
+	text-align: center;
+}
+.homeCategories ul li{
+    width: 33%;
+    text-align: left;
+	display: inline-block;
+	border: 2px solid transparent;
+	background-color: #fff;
+	cursor: pointer;
+}
+.homeCategories ul li p{
+	text-align: left;
+	margin-bottom: 5px;
+}
+.homeCategoriesCards{
+	border: 2px solid transparent;
+}
+.homeCategoriesCards:hover{
+	border: 2px solid #007bff;
+}
+.homeCategoriesCards h3{
+	font-size: 16px;
+    color: rgb(132, 138, 145);
+	line-height: 30px;
+	margin-bottom: 5px;
+}
+
+.homeCategoriesCards p{
+	line-height: 22px;
+}
+
+.homeCategoriesLogo{
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid rgba(2, 101, 255, 0.26)
+}
+.viewMoreButton{
+	text-align: center;
+    margin-top: 62px;
+    margin-bottom: 62px;
+}
+
+.viewMoreButton button{
+	transition: 0.3s ease-in-out;
+	box-shadow: 0 20px 50px 0 rgba(0, 83, 213, 0.5);
+}
+.viewMoreButton button:hover{
+	box-shadow: 0 10px 25px 0 rgba(0, 83, 213, 0.5);
+	transform: translateY(2px);
+	transition: 0.3s ease-in-out;
+}
+
+#nprogress .bar {
+	background: blue;
+  }
+
+  .largeBox{
+	box-shadow: 0 20px 50px 0 rgba(0, 83, 213, 0.5);
+  }
+  .footerLinks ul {
+	  text-align: center;
+  }
+  footer{
+	  background-color: #007bff;
+	  padding: 20px;
+  }
+  .footerLinks ul li a{
+	  color: #fff;
+  }
+  .footerLinks ul li{
+	  display: inline-block;
+	  margin: 10px;
+  }
+  .visitlink{
+	font-size: 12px;
+    margin-top: 4px;
+    background: #f5f8fe;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 37%;
+  }
