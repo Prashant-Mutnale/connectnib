@@ -33,10 +33,10 @@ export default ({ children, title }) => (
                 integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
                 crossorigin="anonymous"
             />
-            <script
+            {/* <script
                 src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
                 crossorigin
-            />
+            /> */}
 
             <script
                 src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"

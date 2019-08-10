@@ -15,12 +15,101 @@ class Categories extends Component {
             <h1>Check why the best <br />
               companies invested in us</h1>
           </div>
-          <div className={css.aboutus}>
+          <div className={css.categoriesListHead}>
             <h2>
               Categories
               </h2>
           </div>
-          <div className={css.categoriesList}></div>
+          <div className="container">
+            <div className={css.categoriesList}>
+              <ul>
+                <li>
+                  <div className={css.categoriesCards}>
+                    <h3>Getting Started</h3>
+                    <p>Answers & Artivles related to getting started</p>
+                    <a>View</a>
+                  </div>
+                </li>
+                <li>
+                  <div className={css.categoriesCards}>
+                    <h3>Getting Started</h3>
+                    <p>Answers & Artivles related to getting started</p>
+                    <a>View</a>
+                  </div>
+                </li>
+                <li>
+                  <div className={css.categoriesCards}>
+                    <h3>Getting Started</h3>
+                    <p>Answers & Artivles related to getting started</p>
+                    <a>View</a>
+                  </div>
+                </li>
+                <li>
+                  <div className={css.categoriesCards}>
+                    <h3>Getting Started</h3>
+                    <p>Answers & Artivles related to getting started</p>
+                    <a>View</a>
+                  </div>
+                </li>
+                <li>
+                  <div className={css.categoriesCards}>
+                    <h3>Getting Started</h3>
+                    <p>Answers & Artivles related to getting started</p>
+                    <a>View</a>
+                  </div>
+                </li>
+                <li>
+                  <div className={css.categoriesCards}>
+                    <h3>Getting Started</h3>
+                    <p>Answers & Artivles related to getting started</p>
+                    <a>View</a>
+                  </div>
+                </li>
+                <li>
+                  <div className={css.categoriesCards}>
+                    <h3>Getting Started</h3>
+                    <p>Answers & Artivles related to getting started</p>
+                    <a>View</a>
+                  </div>
+                </li>
+                <li>
+                  <div className={css.categoriesCards}>
+                    <h3>Getting Started</h3>
+                    <p>Answers & Artivles related to getting started</p>
+                    <a>View</a>
+                  </div>
+                </li>
+                <li>
+                  <div className={css.categoriesCards}>
+                    <h3>Getting Started</h3>
+                    <p>Answers & Artivles related to getting started</p>
+                    <a>View</a>
+                  </div>
+                </li>
+                <li>
+                  <div className={css.categoriesCards}>
+                    <h3>Getting Started</h3>
+                    <p>Answers & Artivles related to getting started</p>
+                    <a>View</a>
+                  </div>
+                </li>
+                <li>
+                  <div className={css.categoriesCards}>
+                    <h3>Getting Started</h3>
+                    <p>Answers & Artivles related to getting started</p>
+                    <a>View</a>
+                  </div>
+                </li>
+                <li>
+                  <div className={css.categoriesCards}>
+                    <h3>Getting Started</h3>
+                    <p>Answers & Artivles related to getting started</p>
+                    <a>View</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </Layout>
     );
