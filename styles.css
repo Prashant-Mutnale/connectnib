@@ -68,6 +68,7 @@ table {
 	right: 0;
 	padding: 12px 0;
 	z-index: 4;
+	top: 0;
 }
 
 /* static css */
@@ -113,11 +114,12 @@ header a{
 	margin-left: 20px;
 }
 
-.banner, .categoriesbanner, .blogbanner{
+.banner, .categoriesbanner, .blogbanner, .aboutbanner{
 	background-image: url('/static/images/banner.png');
 	height: 309px;
 	background-size: cover;
 	padding-top: 52px;
+	margin-top: 64px;
 }
 .categoriesbanner{
 	background-image: url('/static/images/categories-banner.png');
@@ -125,12 +127,18 @@ header a{
 .blogbanner{
 	background-image: url('/static/images/blogbanner.png')
 }
-.banner h1, .categoriesbanner h1{
+.aboutbanner{
+	background-image: url('/static/images/about-us.svg')
+}
+.banner h1, .categoriesbanner h1, .aboutbanner h1, .blogbanner h1{
 	font-size: 28px;
 	line-height: 40px;
 	text-align: center;
-	padding-top: 100px;
+    padding-top: 76px;
 }
+/* .aboutbanner h1{
+	padding-top: 0px;
+} */
 .aboutus h2, .categoriesListHead h2{
 	font-size: 35px;
     font-family: Circular Std Medium;
