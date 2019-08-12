@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
 import Link from 'next/link'
 import Head from 'next/head'
-import Nav from '../components/nav'
-import Layout from '../components/Layout'
+// import Nav from '../components/nav'
+import Layout from '../../../components/Layout'
 import { Button } from 'react-bootstrap';
-import css from "../styles.css"
+import css from "../../../styles.css"
+import { withRouter } from 'next/router'
 
-class Categories extends Component {
+class CategoriesDetails extends Component {
+  componentDidMount(){
+    console.log("pathname",this.props.router.asPath)
+  }
   render() {
     return (
       <Layout>
         <div>
           <div className={css.categoriesbanner}>
-            <h1>Check why the best <br />
-              companies invested in us</h1>
+            <h1>Categories details</h1>
           </div>
           <div className={css.categoriesListHead}>
             <h2>
@@ -24,18 +27,18 @@ class Categories extends Component {
             <div className={css.categoriesList}>
               <ul>
                 <li>
-                  <Link href='/categoriesdetails/[id]' as={`/categoriesdetails/${"mark"}`}>
-                    <a>First Post</a>
-                  </Link>
+                  <div className={css.categoriesCards}>
+                    <h3>Getting Started</h3>
+                    <p>Answers & Artivles related to getting started</p>
+                    <a>View</a>
+                  </div>
                 </li>
                 <li>
-                  <Link href='/categoriesdetails/[id]' as={`/categoriesdetails/${"sam"}`}>
-                    <div className={css.categoriesCards}>
-                      <h3>Getting Started</h3>
-                      <p>Answers & Artivles related to getting started</p>
-                      <a>View</a>
-                    </div>
-                  </Link>
+                  <div className={css.categoriesCards}>
+                    <h3>Getting Started</h3>
+                    <p>Answers & Artivles related to getting started</p>
+                    <a>View</a>
+                  </div>
                 </li>
                 <li>
                   <div className={css.categoriesCards}>
@@ -116,4 +119,4 @@ class Categories extends Component {
   }
 }
 
-export default Categories
+export default withRouter (CategoriesDetails)
