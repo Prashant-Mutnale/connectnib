@@ -24,8 +24,12 @@ class Categories extends Component {
             <div className={css.categoriesList}>
               <ul>
                 <li>
-                  <Link href='/categoriesdetails/[id]' as={`/categoriesdetails/${"mark"}`}>
-                    <a>First Post</a>
+                <Link href='/categoriesdetails/[id]' as={`/categoriesdetails/${"mark"}`}>
+                    <div className={css.categoriesCards}>
+                      <h3>Getting Started</h3>
+                      <p>Answers & Artivles related to getting started</p>
+                      <a>View</a>
+                    </div>
                   </Link>
                 </li>
                 <li>
