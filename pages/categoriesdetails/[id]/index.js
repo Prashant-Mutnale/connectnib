@@ -10,6 +10,9 @@ import { withRouter } from 'next/router'
 class CategoriesDetails extends Component {
   componentDidMount(){
     console.log("pathname",this.props.router.asPath)
+    console.log(this.props.router.asPath.split('/'))
+    let m = this.props.router.asPath.split('/')
+    console.log(m[2])
   }
   render() {
     return (
