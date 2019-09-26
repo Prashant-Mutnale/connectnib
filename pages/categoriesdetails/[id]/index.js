@@ -6,6 +6,7 @@ import Layout from '../../../components/Layout'
 import { Button } from 'react-bootstrap';
 import css from "../../../styles.css"
 import { withRouter } from 'next/router'
+import Router from 'next/router'
 
 class CategoriesDetails extends Component {
   componentDidMount(){
@@ -17,6 +18,9 @@ class CategoriesDetails extends Component {
   render() {
     return (
       <Layout>
+        <Head>
+          <title></title>
+        </Head>
         <div>
           <div className={css.categoriesbanner}>
             <h1>Categories details</h1>

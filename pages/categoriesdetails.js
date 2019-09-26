@@ -8,12 +8,6 @@ import css from "../styles.css"
 import { useRouter } from 'next/router'
 
 class Categories extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-        loading: true,
-    };
-}
     componentDidMount(){
         console.log(location)
     }
