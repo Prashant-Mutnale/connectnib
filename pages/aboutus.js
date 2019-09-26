@@ -11,20 +11,21 @@ class AboutUs extends Component {
   state = {maindata: ''}
   static async getInitialProps({ query, req }) {
     console.log("query", query)
-    const res = await fetch('http://dummy.restapiexample.com/api/v1/employees')
+    const res = await fetch('https://reqres.in/api/users')
     const data = await res.json()
     // return { productsList: data.google_search_list }
+    console.log("data",data)
     return {
-      employeelist: data
+      employeelist: data.data
     }
   }
   async getemployeById(dataID) {
-    fetch('http://dummy.restapiexample.com/api/v1/employee/' + dataID)
+    fetch('https://reqres.in/api/users/' + dataID)
       .then((res) => {
         res.json().then((data)=>{
           console.log("data",data)
           this.setState({
-            maindata: data.employee_age
+            maindata: data.data.email
           })
         })
       })
@@ -59,7 +60,7 @@ class AboutUs extends Component {
                 {
                   this.props.employeelist.map((items, i) => {
                     return (
-                      <h4 onClick={() => { this.getemployeById(items.id) }}>{items.employee_name}</h4>
+                      <h4 onClick={() => { this.getemployeById(items.id) }}>{items.first_name}</h4>
                     )
                   })
                 }
