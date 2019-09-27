@@ -1,5 +1,5 @@
 const withCSS = require('@zeit/next-css')
-const sitemap = require('nextjs-sitemap-generator');  
+ 
 module.exports = {
   target: "server"
 };
@@ -18,8 +18,3 @@ webpack: config => {
   }
   return config
 }
-sitemap({  
-  baseUrl: 'http://connectnib.herokuapp.com',  
-  pagesDirectory: __dirname + "/pages",  
-  targetDirectory : 'static/'  
-});
